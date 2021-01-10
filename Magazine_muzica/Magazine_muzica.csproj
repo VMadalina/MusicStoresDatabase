@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{498A98DF-C5C3-4C02-BFBB-6D29975DBFEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Magazine_muzica</RootNamespace>
+    <AssemblyName>Magazine_muzica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoriiVandute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccesoriiVandute.Designer.cs">
+      <DependentUpon>AccesoriiVandute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumeVandute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumeVandute.Designer.cs">
+      <DependentUpon>AlbumeVandute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info_sup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info_sup.Designer.cs">
+      <DependentUpon>Info_sup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazine_muzicaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazine_muzicaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartituriVandute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartituriVandute.Designer.cs">
+      <DependentUpon>PartituriVandute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vanzari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vanzari.Designer.cs">
+      <DependentUpon>Vanzari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrumente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrumente.Designer.cs">
+      <DependentUpon>Instrumente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Magazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Magazine.Designer.cs">
+      <DependentUpon>Magazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Albume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Albume.Designer.cs">
+      <DependentUpon>Albume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaseDiscuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaseDiscuri.Designer.cs">
+      <DependentUpon>CaseDiscuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edituri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edituri.Designer.cs">
+      <DependentUpon>Edituri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accesorii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accesorii.Designer.cs">
+      <DependentUpon>Accesorii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partituri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partituri.Designer.cs">
+      <DependentUpon>Partituri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Producatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Producatori.Designer.cs">
+      <DependentUpon>Producatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vanzari_totale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vanzari_totale.Designer.cs">
+      <DependentUpon>Vanzari_totale.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccesoriiVandute.resx">
+      <DependentUpon>AccesoriiVandute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumeVandute.resx">
+      <DependentUpon>AlbumeVandute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info_sup.resx">
+      <DependentUpon>Info_sup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartituriVandute.resx">
+      <DependentUpon>PartituriVandute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vanzari.resx">
+      <DependentUpon>Vanzari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrumente.resx">
+      <DependentUpon>Instrumente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Magazine.resx">
+      <DependentUpon>Magazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Albume.resx">
+      <DependentUpon>Albume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaseDiscuri.resx">
+      <DependentUpon>CaseDiscuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edituri.resx">
+      <DependentUpon>Edituri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accesorii.resx">
+      <DependentUpon>Accesorii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partituri.resx">
+      <DependentUpon>Partituri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Producatori.resx">
+      <DependentUpon>Producatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vanzari_totale.resx">
+      <DependentUpon>Vanzari_totale.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Magazine_muzicaDataSet.xsc">
+      <DependentUpon>Magazine_muzicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Magazine_muzicaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazine_muzicaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazine_muzicaDataSet.xss">
+      <DependentUpon>Magazine_muzicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
